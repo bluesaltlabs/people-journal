@@ -1,3 +1,3 @@
-export BaseLayout from "./BaseLayout/BaseLayout";
+export Base from "./BaseLayout/Base";
 export Header from "./Header/Header";
 export Footer from "./Footer/Footer";

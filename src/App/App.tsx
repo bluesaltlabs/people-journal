@@ -3,9 +3,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import BaseLayout from '../../Layout/BaseLayout/BaseLayout';
-import Root from '../../routes/root';
-import Error404 from '../../routes/error404';
+import BaseLayout from '../Layout/Base/BaseLayout';
+
+import HomePage from '../pages/home';
+import Error404Page from '../pages/error404';
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
   const routerConfig = [
     {
       path: "/",
-      element: <Root />,
-      errorElement: <Error404 />,
+      element: <HomePage />,
+      errorElement: <Error404Page />,
     },
   ]
 
