@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  
+  /* Text Color */
+  @apply text-gray-950;
+  @apply dark:text-gray-50;
+
+  /* Background Color */
+  @apply bg-slate-50;
+  @apply dark:bg-slate-600;
+  
+}
