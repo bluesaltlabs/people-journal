@@ -1,6 +1,6 @@
 
 
-function CreatePage() {
+function Create() {
 
   return (
     <div>
@@ -11,4 +11,4 @@ function CreatePage() {
   )
 }
 
-export default CreatePage;
+export default Create;

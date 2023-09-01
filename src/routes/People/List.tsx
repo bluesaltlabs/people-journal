@@ -1,6 +1,6 @@
 
 
-function ListPage() {
+function List() {
 
   return (
     <div>
@@ -11,4 +11,4 @@ function ListPage() {
   )
 }
 
-export default ListPage;
+export default List;

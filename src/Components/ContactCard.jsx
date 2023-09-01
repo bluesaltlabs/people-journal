@@ -26,7 +26,7 @@ function ContactCard({ vCard }) {
     // doesn't work in browser for whatever reason
     //vCard.saveToFile(`./${filename}`);
 
-    // todo: implement this in a helper function
+    // todo: implement this file export subroutine as a helper function:
     const file = new Blob([vCard?.getFormattedString()], { type: 'text/vcard' });
     const a   = document.createElement('a'),
           url = URL.createObjectURL(file);
@@ -39,9 +39,7 @@ function ContactCard({ vCard }) {
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
     }, 0);
-  }
-
-  
+  }  
   
   {/* Contact Card */}
   return (

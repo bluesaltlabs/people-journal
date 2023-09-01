@@ -1,5 +1,5 @@
 import { faUsers, faGears } from '@fortawesome/free-solid-svg-icons'
-import LinkButton from '../Components/LinkButton/LinkButton';
+import LinkButton from '../components/LinkButton/LinkButton';
 
 function HomePage() {
   return (

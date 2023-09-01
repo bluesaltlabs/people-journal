@@ -1,4 +1,4 @@
-import ContactCard from '../Components/ContactCard'
+import ContactCard from '../components/ContactCard'
 import vCardsJS from 'vcards-js';
 
 
@@ -16,13 +16,16 @@ function Contacts() {
   vCard.email = 'luke@bluesaltlabs.com';
   vCard.formattedName = 'Luke Sontrop';
   vCard.organization = 'BlueSalt Labs';
-  vCard.photo.attachFromUrl('https://avatars.githubusercontent.com/u/72760763?s=200&v=4', 'JPEG');
+  vCard.photo.attachFromUrl('https://avatars.githubusercontent.com/u/72760763?s=300&v=4', 'JPEG');
   vCard.workPhone = '555-555-5555';
   vCard.birthday = new Date(1990, 11, 11);
   vCard.title = 'Software Developer';
   vCard.url = 'https://bluesaltlabs.com';
-  vCard.socialUrls.twitter = 'https://twitter.com/bluesaltlabs';
   vCard.socialUrls.github = 'https://github.com/bluesaltlabs';
+  vCard.socialUrls.linkedIn = 'https://www.linkedin.com/in/lukesontrop/';
+  vCard.socialUrls.twitter = 'https://twitter.com/bluesaltlabs';
+  vCard.socialUrls.facebook = 'https://www.facebook.com/bluesaltlabs';
+
 
   
   return (

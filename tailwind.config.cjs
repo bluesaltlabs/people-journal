@@ -10,5 +10,7 @@ export default {
   theme: {
     colors,
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
