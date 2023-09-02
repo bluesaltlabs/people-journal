@@ -68,9 +68,9 @@ function ContactCard({ vCard }) {
         
         {/* Contact Card Photo */}
         <div className="contact-card-photo m-3">
-          <img src={vCard?.photo?.url} alt={vCard?.formattedName} />
+          <img src={vCard?.photo?.url || "https://placehold.co/300"} alt={vCard?.formattedName} />
         </div>
-
+        
         {/* Contact Card Info */}
         <div className="contact-card-info m-3">
           <h2 className="text-2xl font-bold">{vCard?.formattedName}</h2>

@@ -2,13 +2,42 @@
   {
     "id": 1,
     "name": {
+      "first": "Luke",
+      "middle": "R",
+      "last": "Sontrop"
+    },
+    "email": "luke@bluesaltlabs.com",
+    "organization": "BlueSalt Labs",
+    "title": "Software Developer",
+    "url": "https://bluesaltlabs.com",
+    "photo": {
+      "url": "https://avatars.githubusercontent.com/u/72760763?s=300&v=4"
+    },
+    "socialUrls": {
+      "github": "https://github.com/bluesaltlabs",
+      "linkedIn": "https://www.linkedin.com/in/lukesontrop/",
+      "twitter": "https://twitter.com/bluesaltlabs",
+      "facebook": "https://www.facebook.com/bluesaltlabs"
+    },
+    "phone": {
+      "work": "555-555-5555"
+    },
+    "birthday": {
+      "year": 1990,
+      "month": 12,
+      "day": 11
+    }
+  },
+  {
+    "id": 2,
+    "name": {
       "first": "test1",
       "middle": "testMiddle1",
       "last": "last1"
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "name": {
       "first": "test2",
       "middle": "testMiddle2",
@@ -16,7 +45,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "name": {
       "first": "test3",
       "middle": "testMiddle3",

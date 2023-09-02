@@ -35,7 +35,6 @@ function Contacts() {
 
       <ContactCard vCard={vCard} />
 
-
     </div>
   );
 }
