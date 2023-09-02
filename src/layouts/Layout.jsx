@@ -1,18 +1,20 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { routes } from '../routes/routes';
 
 
 import Header from '../layouts/Header';
+import Sidebar from '../layouts/Sidebar';
 import Footer from './Footer';
 
 function Layout() {
   return (
     <BrowserRouter>
-      <div className="flex-row">
-        <div className="w-full flex flex-col lg:flex-row flex-grow overflow-hidden">
+      <div className="container mx-auto">
+        <div className="flex flex-row flex-wrap py-4 overflow-hidden">
           <Header />
+          <Sidebar />
         
-          <main>
+          <main role="main" className="w-full sm:w-2/3 md:w-3/4 pt-1 px-2">
             <Routes>
               { Object.keys(routes).map((route, index) => (
                 <Route key={index} path={routes[route].path} element={routes[route].element} />
@@ -21,9 +23,10 @@ function Layout() {
           </main>
 
         </div>
-
-        <Footer />
       </div>
+
+      <Footer />
+
     </BrowserRouter>
   );
 }
@@ -32,37 +35,4 @@ function Layout() {
 export default Layout;
 
 
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-// } from "react-router-dom";
-
-// import BaseLayout from '../layouts/Base/BaseLayout';
-
-// import HomePage from '../pages/home';
-// import Error404Page from '../pages/error404';
-
-// function App() {
-
-//   // todo: create pages directory, add pages/routes. Also, create routes js file? 
-//   const routerConfig = [
-//     {
-//       path: "/",
-//       element: <HomePage />,
-//       errorElement: <Error404Page />,
-//     },
-//   ]
-
-//   const router = createBrowserRouter(routerConfig);
-
-
-//   return (
-//     <RouterProvider router={router}>
-//       <BaseLayout>
-//         <span>App Component</span>
-//       </BaseLayout>
-//       </RouterProvider>
-//   )
-// }
-
-// export default App;
+/* https://dev.to/codeply/helpful-page-layouts-using-tailwind-css-1a3k */

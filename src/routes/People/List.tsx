@@ -1,12 +1,12 @@
-
+import PageContent from "../../layouts/PageContent";
 
 function List() {
 
   return (
-    <div>
+    <PageContent>
       <h1>List People</h1>
       <span>todo</span>
-    </div>
+    </PageContent>
 
   )
 }
